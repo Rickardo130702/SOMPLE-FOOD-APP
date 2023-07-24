@@ -1,0 +1,613 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logo"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="24dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/notification"
+            android:layout_marginTop="26dp"
+            android:layout_marginLeft="220dp"
+            android:layout_toRightOf="@id/logo"/>
+
+        <TextView
+            android:id="@+id/tv1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Lokasi saat ini"
+            android:layout_marginLeft="24dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_below="@id/logo"
+            android:layout_marginTop="16dp"/>
+
+        <ImageView
+            android:id="@+id/location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv1"
+            android:src="@drawable/location"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Yogyakarta, Sleman"
+            android:layout_below="@id/tv1"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@+id/location"/>
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:layout_width="360dp"
+            android:layout_height="40dp"
+            android:layout_below="@id/location"
+            android:background="@color/primary1"
+            android:layout_marginTop="20dp"
+            android:layout_centerHorizontal="true"
+            app:shapeAppearanceOverlay="@style/roundimageview"/>
+
+        <ImageView
+            android:id="@+id/search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginTop="28dp"
+            android:src="@drawable/search"
+            android:layout_marginLeft="38dp"/>
+
+        <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/location"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="18dp"
+            android:layout_toRightOf="@id/search"
+            android:hint="Cari"
+            android:minWidth="48dp"
+            android:minHeight="48dp"
+            android:backgroundTint="@android:color/transparent"/>
+
+        <TextView
+            android:id="@+id/tvkategori"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Kategori"
+            android:layout_below="@id/search"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18dp"/>
+
+        <LinearLayout
+            android:id="@+id/llkategoriBurjo"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvkategori"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burjo"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burjo"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llkategoriAngkringan"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvkategori"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/llkategoriBurjo"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/angkringan"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Angkringan"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llkategoriKafe"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/tvkategori"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/llkategoriAngkringan"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kafe"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Kafe"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llkategoriKFC"
+            android:layout_width="100dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/llkategoriBurjo"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="24dp"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/kfc"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="KFC"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llkategoriBurgerking"
+            android:layout_width="140dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/llkategoriAngkringan"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/llkategoriKFC"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/burger_king"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Burger King"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/llkategoriPadang"
+            android:layout_width="110dp"
+            android:layout_height="36dp"
+            android:orientation="horizontal"
+            android:layout_below="@id/llkategoriAngkringan"
+            android:layout_marginTop="12dp"
+            android:layout_marginLeft="8dp"
+            android:layout_toRightOf="@id/llkategoriBurgerking"
+            android:background="@drawable/rounded_corner">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/padang"
+                android:layout_marginTop="10dp"
+                android:layout_marginLeft="16dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Padang"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/tvlivestory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/llkategoriKFC"
+            android:text="Live Story"
+            android:layout_marginLeft="24dp"
+            android:layout_marginTop="16dp"
+            android:fontFamily="sans-serif-black"
+            android:textSize="18dp"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvlivestory"
+            tools:ignore="SpeakableTextPresentCheck">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tvlivestory"
+                android:layout_marginLeft="24dp"
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory1"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:src="@drawable/sixsenses" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory2"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/diamond" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory3"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/maximilian" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory4"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/bale_bebakaran" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory5"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/floating" />
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/cilivestory6"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_marginLeft="16dp"
+                    android:src="@drawable/pringsewu" />
+
+            </LinearLayout>
+
+        </HorizontalScrollView>
+
+        <TextView
+            android:id="@+id/tv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tempat makan terdekat"
+            android:layout_below="@+id/hsv"
+            android:layout_marginTop="16dp"
+            android:layout_marginLeft="24dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <HorizontalScrollView
+            android:id="@+id/hsv2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tv2">
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+                <RelativeLayout
+                    android:id="@+id/lltmptmknterdekat"
+                    android:layout_width="131dp"
+                    android:layout_height="212dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/rounded_corner">
+
+                    <ImageView
+                        android:id="@+id/ivburjoborneo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/burjo_borneo"/>
+
+                    <TextView
+                        android:id="@+id/tv3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Burjo Borneo"
+                        android:layout_below="@+id/ivburjoborneo"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <ImageView
+                        android:id="@+id/location2"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv3"
+                        android:src="@drawable/location"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv3"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/location2"
+                        android:text="3 menit, 1.6 km"
+                        android:textSize="10dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/tempatmakanterdekatburjo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location2"
+                        android:src="@drawable/burjo"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location2"
+                        android:text="Burjo"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/tempatmakanterdekatburjo"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivrating"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tempatmakanterdekatburjo"
+                        android:src="@drawable/rating"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="76dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tempatmakanterdekatburjo"
+                        android:text="4.4"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="98dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lltmptmknterdekat2"
+                    android:layout_width="131dp"
+                    android:layout_height="212dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_toRightOf="@id/lltmptmknterdekat"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/rounded_corner">
+
+                    <ImageView
+                        android:id="@+id/ivkfcseturan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/kfc_seturan"/>
+
+                    <TextView
+                        android:id="@+id/tv4"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="KFC Seturan"
+                        android:layout_below="@+id/ivkfcseturan"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <ImageView
+                        android:id="@+id/location3"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv4"
+                        android:src="@drawable/location"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv4"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/location3"
+                        android:text="3 menit, 1.6 km"
+                        android:textSize="10dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/tempatmakanterdekatkfc"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location3"
+                        android:src="@drawable/kfc"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location3"
+                        android:text="KFC"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/tempatmakanterdekatkfc"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivrating2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tempatmakanterdekatkfc"
+                        android:src="@drawable/rating"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="76dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tempatmakanterdekatkfc"
+                        android:text="4.4"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="98dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/lltmptmknterdekat3"
+                    android:layout_width="131dp"
+                    android:layout_height="212dp"
+                    android:layout_below="@+id/tv2"
+                    android:layout_toRightOf="@id/lltmptmknterdekat2"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="24dp"
+                    android:background="@drawable/rounded_corner">
+
+                    <ImageView
+                        android:id="@+id/ivrestoransamasana"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/samasana_restorant"/>
+
+                    <TextView
+                        android:id="@+id/tv5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Padang"
+                        android:layout_below="@+id/ivrestoransamasana"
+                        android:layout_marginTop="4dp"
+                        android:layout_marginLeft="16dp"
+                        android:fontFamily="sans-serif-black"/>
+
+                    <ImageView
+                        android:id="@+id/location4"
+                        android:layout_width="12dp"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv5"
+                        android:src="@drawable/location"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tv5"
+                        android:layout_marginLeft="8dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_toRightOf="@+id/location4"
+                        android:text="3 menit, 1.6 km"
+                        android:textSize="10dp"
+                        tools:ignore="TextSizeCheck" />
+
+                    <ImageView
+                        android:id="@+id/tempatmakanterdekatpadang"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location4"
+                        android:src="@drawable/padang"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginLeft="16dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/location4"
+                        android:text="Padang"
+                        android:layout_marginTop="8dp"
+                        android:layout_toRightOf="@+id/tempatmakanterdekatpadang"
+                        android:layout_marginLeft="8dp"/>
+
+                    <ImageView
+                        android:id="@+id/ivrating3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@id/tempatmakanterdekatpadang"
+                        android:src="@drawable/rating"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginLeft="76dp"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/tempatmakanterdekatpadang"
+                        android:text="4.4"
+                        android:layout_marginTop="10dp"
+                        android:fontFamily="sans-serif-black"
+                        android:layout_marginLeft="98dp"/>
+
+                </RelativeLayout>
+            </LinearLayout>
+
+        </HorizontalScrollView>
+    </RelativeLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/tombol"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/white"
+        app:menu="@menu/bottom_navigation_menu"/>
+
+
+</LinearLayout>

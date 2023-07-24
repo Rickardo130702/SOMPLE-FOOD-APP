@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ProfileActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:background="@color/primary2"/>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/fotoprofil"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:src="@color/primary1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="50dp"/>
+
+    <TextView
+        android:id="@+id/tvsultan"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/fotoprofil"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="16dp"
+        android:fontFamily="sans-serif-black"
+        android:textSize="16sp"
+        android:text="Sultan"/>
+
+    <RelativeLayout
+        android:id="@+id/pengaturan"
+        android:layout_width="360dp"
+        android:layout_height="350dp"
+        android:layout_below="@+id/tvsultan"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="20dp"
+        android:layout_centerHorizontal="true">
+
+        <TextView
+            android:id="@+id/akunprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Akun"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/editprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/akunprofil"
+            android:text="Edit Profil"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/akunprofil"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/gantipasword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editprofil"
+            android:text="Ganti Pasword"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/editprofil"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/facebook"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gantipasword"
+            android:text="Facebook"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/gantipasword"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/google"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:text="Google"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/facebook"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/notifikasiprofil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/google"
+            android:text="Notifikasi"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/tvnotifikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/notifikasiprofil"
+            android:text="Notifikasi"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <RadioButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/notifikasiprofil"
+            android:layout_toRightOf="@+id/tvnotifikasi"
+            android:layout_marginTop="-6dp"
+            android:layout_marginLeft="236dp"/>
+
+        <TextView
+            android:id="@+id/lainnyaprofile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvnotifikasi"
+            android:text="Lainnya"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="16dp"/>
+
+        <TextView
+            android:id="@+id/bahasa"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lainnyaprofile"
+            android:text="Bahasa"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/lainnyaprofile"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/bantuan"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bahasa"
+            android:text="Bantuan"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bahasa"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+        <TextView
+            android:id="@+id/tentangaplikasi"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bantuan"
+            android:text="Tentang Aplikasih"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="8dp"/>
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/bantuan"
+            android:src="@drawable/panah"
+            android:layout_toRightOf="@id/editprofil"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="250dp"/>
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/buttonkeluar"
+        android:layout_width="120dp"
+        android:layout_height="60dp"
+        android:layout_below="@+id/pengaturan"
+        android:layout_marginTop="26dp"
+        android:layout_centerHorizontal="true"
+        android:text="Keluar"
+        android:textSize="16dp"/>
+
+</RelativeLayout>
