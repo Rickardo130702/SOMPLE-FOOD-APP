@@ -6,6 +6,7 @@
     android:id="@+id/cvContact"
     android:elevation="4dp"
     app:cardCornerRadius="20dp"
+    android:background="@color/primary1"
     app:cardUseCompatPadding="true">
 
     <RelativeLayout
@@ -19,8 +20,8 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="Promonya"
-            android:fontFamily="sans-serif-black"
-            android:textSize="20sp"
+            android:fontFamily="sans-serif"
+            android:textSize="16sp"
             android:textColor="@color/black"
             android:layout_marginTop="24dp"
             android:layout_marginLeft="24dp"/>

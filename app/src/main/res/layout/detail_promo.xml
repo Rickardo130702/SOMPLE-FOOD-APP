@@ -10,9 +10,9 @@
         android:id="@+id/tvNamaDetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Nama Kontak"
+        android:text="Nama Promo"
         android:fontFamily="sans-serif-black"
-        android:textSize="36sp"
+        android:textSize="24sp"
         android:textColor="@color/black"
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"/>

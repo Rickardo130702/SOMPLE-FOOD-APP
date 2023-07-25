@@ -15,26 +15,26 @@
         android:id="@+id/fotoprofil"
         android:layout_width="100dp"
         android:layout_height="100dp"
-        android:src="@color/primary1"
+        android:src="@drawable/xxxtentacion"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="50dp"/>
 
     <TextView
-        android:id="@+id/tvsultan"
+        android:id="@+id/tvuser"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_below="@+id/fotoprofil"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="8dp"
         android:fontFamily="sans-serif-black"
         android:textSize="16sp"
-        android:text="Sultan"/>
+        android:text="User"/>
 
     <RelativeLayout
         android:id="@+id/pengaturan"
         android:layout_width="360dp"
         android:layout_height="350dp"
-        android:layout_below="@+id/tvsultan"
+        android:layout_below="@+id/tvuser"
         android:background="@drawable/rounded_corner"
         android:layout_marginTop="20dp"
         android:layout_centerHorizontal="true">

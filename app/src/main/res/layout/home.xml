@@ -347,7 +347,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content">
                 <RelativeLayout
-                    android:id="@+id/lltmptmknterdekat"
+                    android:id="@+id/rltmptmknterdekat"
                     android:layout_width="131dp"
                     android:layout_height="212dp"
                     android:layout_below="@+id/tv2"
@@ -434,7 +434,7 @@
                     android:layout_width="131dp"
                     android:layout_height="212dp"
                     android:layout_below="@+id/tv2"
-                    android:layout_toRightOf="@id/lltmptmknterdekat"
+                    android:layout_toRightOf="@id/rltmptmknterdekat"
                     android:layout_marginTop="8dp"
                     android:layout_marginLeft="24dp"
                     android:background="@drawable/rounded_corner">

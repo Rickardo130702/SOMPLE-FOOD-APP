@@ -13,7 +13,28 @@
         android:theme="@style/Theme.Uas_Mobile_Programing"
         tools:targetApi="31">
         <activity
-            android:name=".DaftarBurjoActivity"
+            android:name=".BurjoBorneoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LiveStori1Activity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftrPadangActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftrKFCActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftrBurjoActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarBurgerKingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarKafeActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DaftarAngkringanActivity"
             android:exported="false" />
         <activity
             android:name=".FavoriteActivity"
