@@ -7,12 +7,134 @@
     android:orientation="vertical"
     tools:context=".FavoriteActivity">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@color/primary2">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Favorite"
-        android:textSize="60sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Favorit"
+            android:layout_gravity="center"
+            android:textSize="24sp"
+            android:fontFamily="sans-serif-black"
+            android:layout_marginTop="44dp"/>
 
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/rounded_corner"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/ic_more"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="6dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Tambahkan tempat makan favoritmu"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="14dp"
+            android:textSize="16sp"
+            android:fontFamily="sans-serif"/>
+    </LinearLayout>
+
+    <RelativeLayout
+        android:id="@+id/rlBurjoBorneo2"
+        android:layout_width="380dp"
+        android:layout_height="105dp"
+        android:layout_gravity="center"
+        android:background="@drawable/rounded_corner"
+        android:layout_marginTop="16dp">
+
+        <ImageView
+            android:id="@+id/ivDaftarBurjoBorneo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/daftar_burjo_borneo"/>
+
+        <TextView
+            android:id="@+id/tvDaftarBurjoBorneo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burjo Borneo"
+            android:layout_toRightOf="@id/ivDaftarBurjoBorneo"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:layout_marginLeft="16dp"
+            android:fontFamily="sans-serif-black"/>
+
+        <ImageView
+            android:id="@+id/location5"
+            android:layout_width="12dp"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDaftarBurjoBorneo"
+            android:src="@drawable/location"
+            android:layout_toRightOf="@id/ivDaftarBurjoBorneo"
+            android:layout_marginTop="8dp"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvDaftarBurjoBorneo"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/location5"
+            android:text="3 menit, 1.6 km"
+            android:textSize="10dp"
+            tools:ignore="TextSizeCheck" />
+
+        <ImageView
+            android:id="@+id/iv_ic_BurjoBorneo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location5"
+            android:src="@drawable/burjo"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@id/ivDaftarBurjoBorneo"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/location5"
+            android:text="Burjo"
+            android:layout_marginTop="8dp"
+            android:layout_toRightOf="@+id/iv_ic_BurjoBorneo"
+            android:layout_marginLeft="8dp"/>
+
+        <ImageView
+            android:id="@+id/ivrating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/iv_ic_BurjoBorneo"
+            android:src="@drawable/rating"
+            android:layout_marginLeft="140dp"
+            android:layout_toRightOf="@id/ivDaftarBurjoBorneo"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/iv_ic_BurjoBorneo"
+            android:text="4.4"
+            android:fontFamily="sans-serif-black"
+            android:layout_toRightOf="@id/ivrating"
+            android:layout_marginLeft="8dp" />
+
+
+
+
+    </RelativeLayout>
 
 </LinearLayout>

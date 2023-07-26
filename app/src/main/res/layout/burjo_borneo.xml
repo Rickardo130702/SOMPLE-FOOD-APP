@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,32 +7,110 @@
     android:orientation="vertical"
     tools:context=".BurjoBorneoActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:fontFamily="sans-serif-black"
-        android:text="Burjo Borneo"
-        android:textSize="24sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.122"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.058" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical"
+        android:background="@color/primary2">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Burjo Borneo"
+            android:textSize="24dp"
+            android:fontFamily="sans-serif-black"
+            android:layout_gravity="center"
+            android:layout_marginTop="44dp"/>
+    </LinearLayout>
 
     <TextView
-        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
+        android:text="Tentang Burjo"
+        android:layout_marginTop="16dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-black"/>
+    
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="128dp"
         android:layout_gravity="center"
-        android:text="apa ya"
-        android:textSize="100sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.416"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.464" />
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="16dp"
+            android:text="Burjo Borneo di dirikan oleh mas Ridho pada tahun 2009 di seturan sebagai burjo pertama, dan pada tahun 2014 membuka cabang di Wahid Hasyim. Jauh sebelum berdirinya burjo Borneo ini, tepatnya sejak tahun 2007 mas Ridho beserta               Selengkapnya >"/>
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Gambar"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <HorizontalScrollView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="8dp"
+        tools:ignore="SpeakableTextPresentCheck">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_burjo_borneo1" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_burjo_borneo2"
+                android:layout_marginLeft="8dp"/>
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/detail_burjo_borneo3"
+                android:layout_marginLeft="8dp"/>
+
+        </LinearLayout>
+
+    </HorizontalScrollView>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Promo"
+        android:layout_marginTop="8dp"
+        android:layout_marginLeft="16dp"
+        android:fontFamily="sans-serif-black"/>
+
+    <LinearLayout
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_corner"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Setiap hari selasa gratis Es Teh sepuanya"
+            android:layout_gravity="center"
+            android:textSize="16sp"
+            android:layout_marginTop="4dp"/>
+    </LinearLayout>
 
     <Button
         android:id="@+id/btnPeta"
@@ -40,11 +118,7 @@
         android:layout_height="60dp"
         android:text="Peta"
         android:textSize="20sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.913" />
+        android:layout_gravity="center"
+        android:layout_marginTop="16dp"/>
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
